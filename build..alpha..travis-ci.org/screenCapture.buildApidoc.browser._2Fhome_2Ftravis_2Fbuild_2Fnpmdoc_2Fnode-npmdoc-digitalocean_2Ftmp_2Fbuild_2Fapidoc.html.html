@@ -1,0 +1,430 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/phillbaker/digitalocean-node#readme">digitalocean (v0.9.1)</a>
+</h1>
+<h4>nodejs wrapper for digitalocean v2 api</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.digitalocean">module digitalocean</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.digitalocean.account">
+            function <span class="apidocSignatureSpan">digitalocean.</span>account
+            <span class="apidocSignatureSpan">(client)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.digitalocean.client">
+            function <span class="apidocSignatureSpan">digitalocean.</span>client
+            <span class="apidocSignatureSpan">(token, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">digitalocean.</span>account.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.digitalocean.account">module digitalocean.account</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.digitalocean.account.account">
+            function <span class="apidocSignatureSpan">digitalocean.</span>account
+            <span class="apidocSignatureSpan">(client)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.digitalocean.account.prototype">module digitalocean.account.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.digitalocean.account.prototype.createSshKey">
+            function <span class="apidocSignatureSpan">digitalocean.account.prototype.</span>createSshKey
+            <span class="apidocSignatureSpan">(attributes, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.digitalocean.account.prototype.deleteSshKey">
+            function <span class="apidocSignatureSpan">digitalocean.account.prototype.</span>deleteSshKey
+            <span class="apidocSignatureSpan">(id, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.digitalocean.account.prototype.get">
+            function <span class="apidocSignatureSpan">digitalocean.account.prototype.</span>get
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.digitalocean.account.prototype.getSshKey">
+            function <span class="apidocSignatureSpan">digitalocean.account.prototype.</span>getSshKey
+            <span class="apidocSignatureSpan">(id, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.digitalocean.account.prototype.listSshKeys">
+            function <span class="apidocSignatureSpan">digitalocean.account.prototype.</span>listSshKeys
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.digitalocean.account.prototype.updateSshKey">
+            function <span class="apidocSignatureSpan">digitalocean.account.prototype.</span>updateSshKey
+            <span class="apidocSignatureSpan">(id, attributes, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.digitalocean" id="apidoc.module.digitalocean">module digitalocean</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.digitalocean.account" id="apidoc.element.digitalocean.account">
+        function <span class="apidocSignatureSpan">digitalocean.</span>account
+        <span class="apidocSignatureSpan">(client)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Account(client) {
+  this.client = client;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.digitalocean.client" id="apidoc.element.digitalocean.client">
+        function <span class="apidocSignatureSpan">digitalocean.</span>client
+        <span class="apidocSignatureSpan">(token, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">client = function (token, options) {
+  return new Client(token, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## Usage
+
+Every resource is accessed via an instance of the client. Please [chose one of your tokens](https://cloud.digitalocean.com/settings
+/api/tokens) and use that where ever `TOKEN` is referenced. For example:
+
+```js
+var digitalocean = require('digitalocean');
+var client = digitalocean.<span class="apidocCodeKeywordSpan">client</span>('TOKEN'); // See
+// client.{ RESOURCE_NAME }.{ METHOD_NAME }
+```
+
+Every resource method accepts an optional callback as the last argument. For example:
+
+```js
+client.account.get(function(err, account) {
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.digitalocean.account" id="apidoc.module.digitalocean.account">module digitalocean.account</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.digitalocean.account.account" id="apidoc.element.digitalocean.account.account">
+        function <span class="apidocSignatureSpan">digitalocean.</span>account
+        <span class="apidocSignatureSpan">(client)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Account(client) {
+  this.client = client;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.digitalocean.account.prototype" id="apidoc.module.digitalocean.account.prototype">module digitalocean.account.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.digitalocean.account.prototype.createSshKey" id="apidoc.element.digitalocean.account.prototype.createSshKey">
+        function <span class="apidocSignatureSpan">digitalocean.account.prototype.</span>createSshKey
+        <span class="apidocSignatureSpan">(attributes, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createSshKey = function (attributes, callback) {
+  return this.client.post('/account/keys', attributes, 201, 'ssh_key', callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var client = digitalocean.client('TOKEN');
+client.account
+```
+
+* `client.account.get([callback])`
+* `client.account.listSshKeys([page, perPage,] [callback])`
+* `client.account.listSshKeys([queryObject,] [callback])`
+* `client.account.<span class="apidocCodeKeywordSpan">createSshKey</span>(attributes, [callback])`
+* `client.account.getSshKey(sshKey.id, [callback])`
+* `client.account.deleteSshKey(sshKey.id, [callback])`
+* `client.account.updateSshKey(sshKey.id, attributes, [callback])`
+
+For the latest ssh key valid attributes, [see the official docs](https://developers.digitalocean.com/documentation/v2/#ssh-keys).
+
+### Floating IP resource
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.digitalocean.account.prototype.deleteSshKey" id="apidoc.element.digitalocean.account.prototype.deleteSshKey">
+        function <span class="apidocSignatureSpan">digitalocean.account.prototype.</span>deleteSshKey
+        <span class="apidocSignatureSpan">(id, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">deleteSshKey = function (id, callback) {
+  var url = util.safeUrl('account', 'keys', id);
+  return this.client.delete(url, {}, 204, [], callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+* `client.account.get([callback])`
+* `client.account.listSshKeys([page, perPage,] [callback])`
+* `client.account.listSshKeys([queryObject,] [callback])`
+* `client.account.createSshKey(attributes, [callback])`
+* `client.account.getSshKey(sshKey.id, [callback])`
+* `client.account.<span class="apidocCodeKeywordSpan">deleteSshKey</span>(sshKey.id, [callback])`
+* `client.account.updateSshKey(sshKey.id, attributes, [callback])`
+
+For the latest ssh key valid attributes, [see the official docs](https://developers.digitalocean.com/documentation/v2/#ssh-keys).
+
+### Floating IP resource
+
+```js
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.digitalocean.account.prototype.get" id="apidoc.element.digitalocean.account.prototype.get">
+        function <span class="apidocSignatureSpan">digitalocean.account.prototype.</span>get
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (callback) {
+  return this.client.get('/account', {}, 200, 'account', callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var client = digitalocean.client('TOKEN'); // See
+// client.{ RESOURCE_NAME }.{ METHOD_NAME }
+```
+
+Every resource method accepts an optional callback as the last argument. For example:
+
+```js
+client.account.<span class="apidocCodeKeywordSpan">get</span>(function(err, account) {
+  console.log(err); // null on success
+  console.log(account); //
+});
+```
+
+See below [for more options in the callback](#api-callback-structure).
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.digitalocean.account.prototype.getSshKey" id="apidoc.element.digitalocean.account.prototype.getSshKey">
+        function <span class="apidocSignatureSpan">digitalocean.account.prototype.</span>getSshKey
+        <span class="apidocSignatureSpan">(id, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getSshKey = function (id, callback) {
+  var url = util.safeUrl('account', 'keys', id);
+  return this.client.get(url, {}, 200, 'ssh_key', callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+client.account
+```
+
+* `client.account.get([callback])`
+* `client.account.listSshKeys([page, perPage,] [callback])`
+* `client.account.listSshKeys([queryObject,] [callback])`
+* `client.account.createSshKey(attributes, [callback])`
+* `client.account.<span class="apidocCodeKeywordSpan">getSshKey</span>(sshKey.id, [callback])`
+* `client.account.deleteSshKey(sshKey.id, [callback])`
+* `client.account.updateSshKey(sshKey.id, attributes, [callback])`
+
+For the latest ssh key valid attributes, [see the official docs](https://developers.digitalocean.com/documentation/v2/#ssh-keys).
+
+### Floating IP resource
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.digitalocean.account.prototype.listSshKeys" id="apidoc.element.digitalocean.account.prototype.listSshKeys">
+        function <span class="apidocSignatureSpan">digitalocean.account.prototype.</span>listSshKeys
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listSshKeys = function () {
+  var args = util.extractListArguments(arguments, 0);
+  return this.client.get.apply(this.client, ['/account/keys', {}].concat(slice.call(args.params), [200, 'ssh_keys', args.callback
+]));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```js
+var digitalocean = require('digitalocean');
+var client = digitalocean.client('TOKEN');
+client.account
+```
+
+* `client.account.get([callback])`
+* `client.account.<span class="apidocCodeKeywordSpan">listSshKeys</span>([page, perPage,] [callback])`
+* `client.account.listSshKeys([queryObject,] [callback])`
+* `client.account.createSshKey(attributes, [callback])`
+* `client.account.getSshKey(sshKey.id, [callback])`
+* `client.account.deleteSshKey(sshKey.id, [callback])`
+* `client.account.updateSshKey(sshKey.id, attributes, [callback])`
+
+For the latest ssh key valid attributes, [see the official docs](https://developers.digitalocean.com/documentation/v2/#ssh-keys).
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.digitalocean.account.prototype.updateSshKey" id="apidoc.element.digitalocean.account.prototype.updateSshKey">
+        function <span class="apidocSignatureSpan">digitalocean.account.prototype.</span>updateSshKey
+        <span class="apidocSignatureSpan">(id, attributes, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">updateSshKey = function (id, attributes, callback) {
+  var url = util.safeUrl('account', 'keys', id);
+  return this.client.put(url, attributes, 200, 'ssh_key', callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+* `client.account.get([callback])`
+* `client.account.listSshKeys([page, perPage,] [callback])`
+* `client.account.listSshKeys([queryObject,] [callback])`
+* `client.account.createSshKey(attributes, [callback])`
+* `client.account.getSshKey(sshKey.id, [callback])`
+* `client.account.deleteSshKey(sshKey.id, [callback])`
+* `client.account.<span class="apidocCodeKeywordSpan">updateSshKey</span>(sshKey.id, attributes, [callback])`
+
+For the latest ssh key valid attributes, [see the official docs](https://developers.digitalocean.com/documentation/v2/#ssh-keys).
+
+### Floating IP resource
+
+```js
+var digitalocean = require('digitalocean');
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
