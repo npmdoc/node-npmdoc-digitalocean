@@ -81,6 +81,12 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan"></span>digitalocean</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">digitalocean.</span>account.prototype</span>
 
         </li>
@@ -158,6 +164,28 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.digitalocean.digitalocean">module digitalocean.digitalocean</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.digitalocean.digitalocean.account">
+            function <span class="apidocSignatureSpan">digitalocean.digitalocean.</span>account
+            <span class="apidocSignatureSpan">(client)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.digitalocean.digitalocean.client">
+            function <span class="apidocSignatureSpan">digitalocean.digitalocean.</span>client
+            <span class="apidocSignatureSpan">(token, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -208,6 +236,8 @@ Every resource method accepts an optional callback as the last argument. For exa
 client.account.get(function(err, account) {
 ...</pre></li>
     </ul>
+
+
 
 
 
@@ -422,6 +452,58 @@ For the latest ssh key valid attributes, [see the official docs](https://develop
 
 ```js
 var digitalocean = require(&#x27;digitalocean&#x27;);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.digitalocean.digitalocean" id="apidoc.module.digitalocean.digitalocean">module digitalocean.digitalocean</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.digitalocean.digitalocean.account" id="apidoc.element.digitalocean.digitalocean.account">
+        function <span class="apidocSignatureSpan">digitalocean.digitalocean.</span>account
+        <span class="apidocSignatureSpan">(client)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Account(client) {
+  this.client = client;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.digitalocean.digitalocean.client" id="apidoc.element.digitalocean.digitalocean.client">
+        function <span class="apidocSignatureSpan">digitalocean.digitalocean.</span>client
+        <span class="apidocSignatureSpan">(token, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">client = function (token, options) {
+  return new Client(token, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## Usage
+
+Every resource is accessed via an instance of the client. Please [chose one of your tokens](https://cloud.digitalocean.com/settings
+/api/tokens) and use that where ever `TOKEN` is referenced. For example:
+
+```js
+var digitalocean = require(&#x27;digitalocean&#x27;);
+var client = digitalocean.<span class="apidocCodeKeywordSpan">client</span>(&#x27;TOKEN&#x27;); // See
+// client.{ RESOURCE_NAME }.{ METHOD_NAME }
+```
+
+Every resource method accepts an optional callback as the last argument. For example:
+
+```js
+client.account.get(function(err, account) {
 ...</pre></li>
     </ul>
 
